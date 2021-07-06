@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/bg-pattern-top-mobile.svg),url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 0vw top 0vh, right 0vw bottom 0vh;
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info{
+    padding-top: 100px;
+    text-align: center;
+}
+
+.info .title-info{
+    font-size: 35px;
+    color: hsl(300, 43%, 22%);
+    padding: 0 15px;
+}
+
+.info .text-info{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5em;
+    padding-top: 25px;
+    color: hsl(303, 10%, 53%);
+}
+
+.qualification{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.qualification .box{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 45px;
+    text-align: center;
+    margin: 10px 0;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px; 
+}
+
+.qualification .box  p{
+    padding-top: 8px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.coments{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coments .box-coments{
+    background-color:hsl(300, 43%, 22%);
+    margin: 15px 0;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.box-info{
+    display: flex;
+    align-items: center;
+}
+
+.box-info img{
+    border-radius: 50%;
+    width:55px;
+}
+
+.box-info h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.4em;
+    padding-left: 20px;
+}
+
+.box-info span{
+    color:hsl(333, 80%, 67%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.box-coments p{
+    padding-top: 30px;
+    line-height: 1.6em;
+    color: white;
+}
+
+@media(min-width:1000px){
+
+    body{
+        background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right 60vw top 0vh, right 0vw bottom -10vh;
+        font-family: 'Spartan', sans-serif;
+        font-size: 15px;
+    }
+    .container-responsive{
+        display: flex;
+        flex-direction: row;
+    }
+    .coments{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info{
+        padding-top: 50px;
+        text-align: left;
+        margin-right: 70px;
+    }
+    
+    .info .title-info{
+       width: 400px;
+       padding-left: 0;
+    }
+    
+    .info .text-info{
+        width: 400px;
+    }
+
+    .qualification .box{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        padding: 15px 15px;
+        width: 400px;
+    }
+    
+    .qualification p{
+        padding-left: 30px;
+    }  
+    #box2{
+        margin-left: 50px;
+    } 
+    #box3{
+        margin-left: 100px;
+    } 
+
+    /**/
+    
+    .coments{
+        width: 1000px;
+    }
+    .coments .box-coments{
+        background-color:hsl(300, 43%, 22%);
+        margin: 0px 15px;
+        border-radius: 10px;
+        padding: 25px;
+        height: 300px;
+    }
+    
+    .box-info{
+        display: flex;
+        align-items: center;
+    }
+    
+    .box-info img{
+        border-radius: 50%;
+        width:55px;
+    }
+    
+    .box-info h2{
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        line-height: 1.4em;
+        padding-left: 20px;
+    }
+    
+    .box-info span{
+        color:hsl(333, 80%, 67%);
+        font-weight: 400;
+        font-size: 15px;
+    }
+    
+    .box-coments p{
+        padding-top: 30px;
+        line-height: 1.6em;
+        color: white;
+    }
+    
+    #box-coment-2{
+        margin-top: 20px;
+    }
+
+    #box-coment-3{
+        margin-top: 40px;
+    }
+
+}
+
+@media(min-width:1440px){
+
+    body{
+        background-position: right 70vw top 0vh, right 0vw bottom -20vh;
+    }
+}
